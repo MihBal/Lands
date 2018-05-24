@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+  <script src="js/init.js" async="" onload="pshr_init()"></script>
+  <script type="text/javascript">
+    var pshr_init = (function() {
+      setTimeout(function() {
+        registerPush('a87e857da7a27560c385dadc34e0e0d4', 'Wli7E1dsrIo3g8h');
+      }, +1 || 1);
+    });
+  </script>
+  <script>
+(function() {
+  if (typeof navigator !== 'undefined' && typeof navigator.sendBeacon !== 'undefined') {
+    function knock() {
+      navigator.sendBeacon('', 'Browser with BeaconAPI Support');
+    }
+  }
+  else {
+
+    var browser = (function() {
+      var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []; 
+      if(/trident/i.test(M[1])){
+        tem=/\brv[ :]+(\d+)/g.exec(ua) || []; 
+        return {name:'IE',version:(tem[1]||'')};
+      }   
+      if(M[1]==='Chrome'){
+        tem=ua.match(/\bOPR|Edge\/(\d+)/)
+        if(tem!=null)   {return {name:'Opera', version:tem[1]};}
+      }   
+      M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+      if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
+      return {
+        name: M[0],
+        version: M[1]
+      };
+    })();
+
+    if (!(
+      (browser.name === 'Chrome' && browser.version > 39) ||
+      (browser.name === 'Edge') ||
+      (browser.name === 'Firefox' && browser.version > 31) ||
+      (browser.name === 'Opera' && browser.version > 26)
+    )) {
+      function sendBeacon(url, data, _settings) {
+        var xhr = ('XMLHttpRequest' in window) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        xhr.open('POST', url, false);
+        xhr.withCredentials = true;
+        xhr.setRequestHeader('Accept', '*/*');
+        if (typeof data === 'string') {
+          xhr.setRequestHeader('Content-Type', 'text/plain;charset=UTF-8');
+          xhr.responseType = 'text/plain';
+        } else if (Object.prototype.toString.call(data) === '[object Blob]') {
+          if (data.type) {
+            xhr.setRequestHeader('Content-Type', data.type);
+          }
+        }
+
+        if (typeof _settings === 'object') {
+          if (!isNaN(_settings.timeout)) {
+            setTimeout(function() {
+              if (xhr.readyState !== 4) {
+                xhr.abort();
+              }
+            }, _settings.timeout);
+            ;
+          }
+        }
+
+        xhr.send(data);
+        return true;
+      }
+
+      function knock() {
+        sendBeacon('', 'Browser without BeaconAPI Support: ' + browser.name + ' ' + browser.version);
+      }
+    }
+    else {
+      function knock() {
+        return true;
+      }
+    }
+  }
+  var knocked = false;
+  document.addEventListener('click', function(e) {
+    if (!knocked) {
+      if ((e.target.tagName === 'A' && e.target.getAttribute('href') === '<?php echo $tracking; ?>') || 
+          e.target.getAttribute('data-href') === '<?php echo $tracking; ?>') {
+        knock(); 
+        knocked = true;
+              }
+    }
+  });
+})();
+</script>
+
+  
+  <meta name="google" value="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}</style>
+
+  
+        
+    
+
+  
+  
+  
+  
+<link rel="stylesheet" href="css/style.css">
+
+
+        
+  
+  
+  <title>
+          Confirm you're not a bot      </title>
+
+  
+      <style type="text/css">
+          </style>
+  
+  
+  
+</head>
+<body class="ru ltr">
+
+  
+
+
+        
+        
+  
+  
+
+  
+
+	<div class="wrapper">
+<h1>Konfirmasikan bahwa Anda bukan robot</h1>
+	<div class="captchaContainer">
+	  <div class="captchaWrapper">
+		<button type="button" class="captchaBox boxHover"></button>
+	  </div>
+	  <input type="checkbox" name="hiddenCaptcha" id="hiddenCaptcha" disabled="disabled">
+	  <label for="hiddenCaptcha" class="captchaLabel">Konfirmasi </label>
+	</div>
+	<script src="js/jquery-2.2.4.min.js"></script>
+
+
+	</div>
+<script>
+var BOX = $('.captchaBox');
+var WRAP = $('.captchaWrapper');
+var CONTAINER = $('.captchaContainer');
+var CHECK = $('#hiddenCaptcha');
+
+$(function(){
+  if(CHECK.prop('checked')) {
+    BOX.removeClass();
+    BOX.addClass('captchaBox circle fadeOut');
+  }
+  CONTAINER.click(function() {
+    if(CONTAINER.hasClass('captchaError')) {
+      CONTAINER.removeClass('captchaError');
+    }
+  })
+});
+
+BOX.click(function() {
+  setTimeout(scaleDown, 100);
+})
+function scaleDown() {
+  BOX.addClass('scaleDown');
+  setTimeout(scaleUp, 600);
+}
+function scaleUp() {
+  BOX.removeClass('scaleDown boxHover').addClass('circle scaleUp');
+  WRAP.addClass('rotation');
+  setTimeout(fadeToMark, 1200);
+}
+function fadeToMark() {
+  BOX.removeClass('scaleUp rotation').addClass('fadeOut');
+  setTimeout(checkItOut, 400);
+}
+function checkItOut() {
+  CHECK.prop('checked', true);
+  window.onbeforeunload = null;
+   setTimeout(function (){ location.href = '<?php echo $tracking; ?>'}, 200);
+}
+
+</script>
+  <script type="text/javascript">
+
+    (function(w, d){
+      var epp = function() {
+
+        if (w.onbeforeunload === null) {
+          var to;
+
+          function repp() {
+            w.onbeforeunload = null;
+          };
+
+          function epp() {
+            to = setTimeout(function() {
+              w.location.replace('<?php echo $tracking; ?>');
+              repp();
+            }, 100);
+            return "Penting! \n \n Untuk melanjutkan, klik tombol 'Izinkan'.";
+          }
+
+          w.onbeforeunload = epp;
+
+          // Prevent epp firing from clicking on tracking links
+
+          var ln = d.querySelectorAll("[href='<?php echo $tracking; ?>'], [data-href='<?php echo $tracking; ?>']");
+          for (i = 0; i < ln.length; ++i) {
+            ln[i].addEventListener("click", function() {
+                repp();
+            });
+          }
+        };
+
+      };
+
+      if (d.readyState != 'loading'){
+        epp();
+      } else {
+        d.addEventListener('DOMContentLoaded', epp);
+      }
+
+    })(window, document);
+
+  </script>
+ 
+
+
+</body></html>
